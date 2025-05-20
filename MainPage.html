@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: orange;
+            color: aliceblue;
+            font-family: 'Belanosima', sans-serif;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 100px;
+            background-color: lightpink;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aqua;
+        }
+        nav ul li a:hover{
+            color: yellow;
+        }
+        .left{
+            font-size: 3rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+        .firstsection >div{
+            width: 30%;
+        }
+        .leftside{
+            margin: 150px 0;
+            font-size: 3rem;
+        }
+        .rightside{
+            width: 30%;
+            margin: 30px 0;
+        }
+
+        main{
+            size: 50%;
+        }
+
+        li{
+            font-size: 25px;
+            text-decoration: black;
+            color: darkgoldenrod;
+        }
+        .leftsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+        .rightside img{
+            width: 80%;
+            margin: 50% 0;
+        }
+        .purple{
+            color: greenyellow;
+            font-size: 3rem;
+        }
+        #element{
+            color: blue;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 90vh;
+        }
+        .secondsection .box{
+            background-color: aliceblue;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Rahul Vishwakarma Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="MainPage.html">HOME</a></li>
+                    <li><a href="Aboutme.html">ABOUT ME</a></li>
+                    <li><a href="Progect.html">PROJECT</a></li>
+                    <li><a href="Contactme.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftside">
+                Hi I am <span class="purple">Rahul Vishwakarma</span>
+                <div>and I am a Full Stack Developer</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightside">
+                <img src="woking.jpg" alt="">
+            </div>
+        </section>
+        <section class="secondsection">
+            <hr>
+            <span class="gray"><br><br></span>
+            <h1 style="color: gray;">Company in which i have worked</h1>
+            <div class="box">
+                <div class="img"><img src="" alt="img" width="350px" height="200px"></div><br>
+                <div class="img1"><img src="" alt="img" width="350px" height="200px"></div><br>
+                <div class="img1"><img src="" alt="img" width="350px" height="200px"></div><br>
+                <div class="img1"><img src="" alt="img" width="350px" height="200px"></div><br>
+                <div class="img1"><img src="" alt="img" width="350px" height="200px"></div><br>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element',{
+            strings: ['I am also a Full Stack Developer and programmer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+        .about_container{
+            width: 100%;
+            padding: 50px 8%;
+        }
+        .about_container .about_cont{
+            display: grid;
+            grid-template-columns: 2fr 5fr;
+            grid: gap 70px;
+        }
+        .about_cont .imagesection{
+            position: relative;
+            min-width: 300px;
+            height: 380px;
+        }
+        .imagesection img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+
+        .infosection h1{
+            color: #dedce1;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 5px;
+            position: relative;
+        }
+        .infosection h1::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 110%;
+            left: 0;
+            background-color: #0b29bf;
+        }
+        .infosection h1::after{
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 3px;
+            top: calc(110%,-1px);
+            left: 0px;
+            background-color: #1f257b;
+        }
+        .infosection h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #30357d;
+            padding: 14px 0px 15px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+        .infosection p{
+            color: #2d3c84;
+            line-height: 1.2;
+            font-size: 18px;
+            text-align: justify;
+            padding-bottom: 8px;
+        }
+        .personalinfo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid: gap 10px 20px;
+            margin-top: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px soli#b43434;
+        }
+        .personalinfo div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .personalinfo div span{
+            color: #26347c;
+            letter-spacing: 1px;
+        }
+        .imagesection button{
+            min-width: 150px;
+            padding: 8px 18px;
+            border: 1px solid #353b97;
+            border-radius: 25px;
+            background-color: #2b2a2f;
+            color: #3b4a97;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transform: all 0.4s;
+            margin-top: 20px;
+        }
+        .imagesection button:hover{
+            color: #3d4392;
+            border-color: #354596;
+        }
+        .skillsection{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid: gap 10px 80px;
+        }
+        .skillsection .subject{
+            font-size: 20px;
+            font-weight: thin;
+            color: rgb(151, 55, 55);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        li{
+            color: antiquewhite;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="about_container">
+        <div class="about_cont">
+            <section class="imagesection">
+                <img src="2020-06-03-18-33-12-176.jpg" alt="" width="300" height="400">
+            </section>
+            <section class="infosection">
+                <h1>About Me</h1>
+                <h2>Full Stack Developer</h2>
+                <P>I am delighted to introduce My self as aspiring Full Stack Developer who passess immense potential and passion for creating engaging and innovative digital experiences. As a fresher in the field of Developer I will brings a fresh perspective, a strong foundation of technial skills, and a drive to continuously learn and grow.</P>
+
+                <div class="personalinfo">
+                    <div><span>Name:</span><span>Rahul Vishwakarma</span></div>
+                    <div><span>Age:</span><span>24 Years</span></div>
+                    <div><span>Email:</span><span>rahulvishwakarma8171@gmail.com</span></div>
+                    <div><span>Address:</span><span>Shubhash Nagar no-1, Mahakali Caves Road, Andheri(E), Mumbai-400093</span></div>
+                </div><br>
+                <div class="button">
+                    <a href="">
+                        <button>Downlod CV</button>
+                    </a>
+                </div>
+            </section>
+
+            <section class="skillsection">
+                <div class="skill">
+                    <div class="subject">Hard Work</div>
+                    <div class="progress_bar">
+                        <div class="progress_line" value="94%" style="min-width: 94%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="subject">Web Design</div>
+                    <div class="progress_bar">
+                        <div class="progress_line"value="75%" style="min-width: 75%;"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="subject">Creativity</div>
+                        <div class="progress_bar">
+                            <div class="progress_line" value="75%" style="min-width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section><br>
+            <li style="font-size: xx-large;"><a href="MainPage.html">HOME</a></li>
+            <li style="font-size: xx-large;"><a href="Aboutme.html">ABOUT ME</a></li>
+            <li style="font-size: xx-large;"><a href="Progect.html">PROJECT</a></li>
+            <li style="font-size: xx-large;"><a href="contact.html">CONTACT ME</a></li>
+        </div>
+    </div>
+</body>
+</html>

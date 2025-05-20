@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Currency Converter</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body{
+            background-image: url("currency.jpg");
+            background-size: cover;
+            text-align: center;
+            font-size: large;
+        }
+        .head1{
+            color: rgb(123, 37, 37);
+            font-weight: 900;
+            background-color: aqua;
+            font-size: 50px;
+
+        }
+        .amount_con{
+            color: rgb(86, 11, 207);
+            text-decoration: dotted;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+        }
+        .convert_from{
+            color: yellow;
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .convert_to{
+            color: yellow;
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .button{
+            text-decoration: dashed;
+
+        }
+        .convert{
+            font-size: 30px;
+            background-color: green;
+        }
+        .reset{
+            font-size: 30px;
+            background-color: red;
+        }
+        #finalAmount{
+            font-size: 30px;
+            margin: 5px;
+            padding: 5px;
+            background-color: pink;
+            margin: 10px;
+            padding: 10px;
+        }
+        
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- Currency Converter  -->
+    <h1 class="head1">Currency Converter</h1>
+
+    <hr>
+   
+
+            <div class="amount_con">
+                <label for="oamount"> Amount to Convert :</label>
+                <input type="text" class="searchBox" placeholder="0.00" id="searchBox">
+            </div>
+
+
+      <hr>    
+                <span class="convert_from">From</span>
+           
+            <select class="from" id="from">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+   
+           
+                <span class="convert_to">To</span>
+           
+            <select class="to" id="to">
+                <option value="">Select One …</option>
+                <option value="USD">USD</option>
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MVR">MVR</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="UYU">UYU</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+
+
+  <!-- Buttons -->
+
+     <div class="button">
+
+        <!-- convert button -->
+        <button class="convert" id="convert" type="submit">
+            Convert
+        </button>
+
+        <!-- reset button -->
+        <button class="reset" onclick="clearVal()">
+            Reset
+        </button>
+    </div>
+
+<!-- Amount -->
+    <div id="finalAmount" class="">
+        <!-- Display the converted amount -->
+        <h2>Converted Amount :
+            <span class="finalValue"  id="finalValue" style="color:green;">answer </span>
+        </h2>
+    </div>
+   
+
+<!-- linking script.js file -->
+    <script src="converter.js"></script>
+</body>
+
+</html>

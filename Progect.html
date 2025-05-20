@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+        .about_container{
+            width: 100%;
+            padding: 50px 8%;
+        }
+        .about_container .about_cont{
+            display: grid;
+            grid-template-columns: 2fr 5fr;
+            grid: gap 70px;
+        }
+        .about_cont .imagesection{
+            position: relative;
+            min-width: 300px;
+            height: 380px;
+        }
+        .imagesection img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+        .infosection h1{
+            color: #dedce1;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 5px;
+            position: relative;
+        }
+        .infosection h1::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 110%;
+            left: 0;
+            background-color: #384480;
+        }
+        .infosection h1::after{
+            content: '';
+            position: absolute;
+            width: 40%;
+            height: 3px;
+            top: calc(110%,-1px);
+            left: 0px;
+            background-color: #373c86;
+        }
+        .infosection h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #313789;
+            padding: 14px 0px 15px;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+        .infosection p{
+            color: #3b488b;
+            line-height: 1.2;
+            font-size: 18px;
+            text-align: justify;
+            padding-bottom: 8px;
+        }
+        .personalinfo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid: gap 10px 20px;
+            margin-top: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid#864040;
+        }
+        .personalinfo div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+        .personalinfo div span{
+            color: #334083;
+            letter-spacing: 1px;
+        }
+        .imagesection button{
+            min-width: 150px;
+            padding: 8px 18px;
+            border: 1px solid#3c4296;
+            border-radius: 25px;
+            font-size: 18px;
+            background-color: #2b2a2f;
+            color: #37489e;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.4s;
+            margin-top: 20px;
+        }
+        .imagesection button:hover{
+            color: #2e3484;
+            border-color: #283b9a;
+        }
+        .skillsection{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid: gap 10px 80px;
+        }
+        .skillsection .subject{
+            font-size: 20px;
+            font-weight: thin;
+            color: rgb(150, 50, 50);
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        li{
+            color: antiquewhite;
+        }
+        .button{
+            text-align: center;
+            background-color: black;
+            font-size: x-large;
+        }
+        li{
+            color: antiquewhite;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="about_container">
+        <div class="about_cont">
+            <section class="imagesection">
+                <img src="gst app.jpeg"" width="300" height="400">
+            </section>
+            <section class="infosection">
+                <h1>Poject Details</h1>
+                <h2> GST Mobile App</h2>
+                <P>     INTRODUCTION: TO GST. GST is one indirect tax for the whole nation, which will 
+                    make India one unified common market. The GST intends to subsume most indirect taxes under 
+                    a single taxation regime. GST is a single tax on the supply of goods and services, right from the 
+                    manufacturer to the consumer.
+                </P>
+                    
+                <p>    Goods and services are divided into five different tax slabs for collection of tax - 0%, 5%, 
+                    12%, 18% and 28%. However, petroleum products, alcoholic drinks, and electricity are not 
+                    taxed under GST and instead are taxed separately by the individual state governments, as per 
+                    the previous tax regime. There is a special rate of 0.25% on rough precious and semi-precious 
+                    stones and 3% on gold. In addition a cess of 22% or other rates on top of 28% GST applies on 
+                    few items like aerated drinks, luxury cars and tobacco products. the statutory tax rate for most 
+                    goods was about 26.5%, Post-GST, most goods are expected to be in the 18% tax range.
+                    
+                </p>
+                <br>
+                <div class="button">
+                    <a href="">Downlod <button>Downlod Crane Details</button>
+                    </a>
+                </div>
+
+                <li style="font-size: xx-large;"><a href="MainPage.html">HOME</a></li>
+                <li style="font-size: xx-large;"><a href="Aboutme.html">ABOUT ME</a></li>
+                <li style="font-size: xx-large;"><a href="Progect.html">PROJECT</a></li>
+                <li style="font-size: xx-large;"><a href="contact.html">CONTACT ME</a></li>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
