@@ -1,3 +1,4 @@
+/*
 // Integer to String Conversion.
 let num = 55;
 console.log(typeof num);
@@ -21,3 +22,27 @@ console.log(isLoggedIn)
 let booleanIsLoggedIn = Boolean(isLoggedIn)
 console.log(typeof booleanIsLoggedIn)
 console.log(booleanIsLoggedIn)
+*/
+
+//Primitive 
+const score = 100;
+const scoreValue = 100.3;
+console.log(score);
+const isLoggedIn = false;
+const outSide = null;
+
+const id = Symbol('123');
+const motherId = Symbol('456');
+
+console.log(id==motherId);
+const bigNumber = 1236547894n;
+
+//Not Primitive
+let obj = {
+    name:"Ram",
+    age: 25,
+}
+
+const myFunction = function(){
+    console.log("Hello World..");
+}
