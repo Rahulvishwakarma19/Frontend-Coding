@@ -46,3 +46,7 @@ let obj = {
 const myFunction = function(){
     console.log("Hello World..");
 }
+
+
+let firstName = "RAHUL";
+console.log(firstName);
