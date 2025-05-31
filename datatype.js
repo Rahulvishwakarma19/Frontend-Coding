@@ -49,4 +49,6 @@ const myFunction = function(){
 
 
 let firstName = "RAHUL";
+let roolId = 123;
 console.log(firstName);
+console.log(roolId);
