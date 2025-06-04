@@ -49,8 +49,10 @@ const myFunction = function(){
 
 
 let firstName = "RAHUL";
+let lastName = "VISHWAKARMA";
 let roolId = 123;
 let myAge = 12;
 console.log(firstName);
+console.log(lastName);
 console.log(roolId);
 console.log(myAge);
