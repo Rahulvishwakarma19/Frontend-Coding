@@ -55,6 +55,7 @@ let myAge = 12;
 let subject = "Python";
 let roomNo = 124;
 let cityName = "Mumbai";
+
 console.log(firstName);
 console.log(lastName);
 console.log(roolId);
