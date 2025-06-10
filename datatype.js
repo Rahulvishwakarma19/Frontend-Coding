@@ -63,3 +63,4 @@ console.log(myAge);
 console.log(subject);
 console.log(roomNo);
 console.log(cityName);
+console.log(cityName);
