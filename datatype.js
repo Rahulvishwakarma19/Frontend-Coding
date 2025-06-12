@@ -56,6 +56,7 @@ let subject = "Python";
 let roomNo = 124;
 let cityName = "Mumbai";
 let pinCode = 400093;
+let phonNum = 1236547890;
 
 console.log(firstName);
 console.log(lastName);
@@ -66,3 +67,4 @@ console.log(roomNo);
 console.log(cityName);
 console.log(cityName);
 console.log(pinCode);
+console.log(phonNum);
